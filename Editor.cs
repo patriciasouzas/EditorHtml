@@ -1,4 +1,3 @@
-using System;
 using System.Text;
 
 namespace EditorHtml
@@ -27,6 +26,7 @@ namespace EditorHtml
 
             Console.WriteLine("-------------------");
             Console.WriteLine("Deseja salvar o arquivo?");
+            Viewer.Show(file.ToString());
         }
     }
 }
