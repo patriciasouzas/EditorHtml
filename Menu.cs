@@ -1,5 +1,3 @@
-using System;
-
 namespace EditorHtml
 {
     public static class Menu
@@ -20,8 +18,7 @@ namespace EditorHtml
         public static void DrawScreen()
         {
             Console.Write("+");
-            for (int i = 0; i < 30; i++)
-                Console.Write("-");
+            for (int i = 0; i <= 30; i++) Console.Write("-");
 
             Console.Write("+");
             Console.Write("\n");
@@ -29,19 +26,16 @@ namespace EditorHtml
             for (int lines = 0; lines <= 10; lines++)
             {
                 Console.Write("|");
-                for (int i = 0; i < 30; i++)
-                    Console.Write(" ");
+                for (int i = 0; i <= 30; i++) Console.Write(" ");
 
                 Console.Write("|");
                 Console.Write("\n");
             }
 
             Console.Write("+");
-            for (int i = 0; i < 30; i++)
-                Console.Write("-");
+            for (int i = 0; i <= 30; i++) Console.Write("-");
 
             Console.Write("+");
-            Console.Write("\n");
         }
 
         public static void WriteOptions()
@@ -67,7 +61,7 @@ namespace EditorHtml
             switch (option)
             {
                 case 1: Editor.Show(); break;
-                case 2: Console.WriteLine("View"); break;
+                case 2: Viewer.Show(""); break;
                 case 0:
                     {
                         Console.Clear();
